@@ -6,7 +6,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: rgb(120, 223, 185);
+  background-color: rgb(122, 122, 179);
 }
 
 main {
@@ -27,7 +27,7 @@ main {
   width: 100%;
   padding: 0.625rem;
   cursor: pointer;
-  background-color: yellow;
+  background-color: rgb(255, 187, 0);
   border: 1px solid blue;
 }
 
@@ -37,10 +37,10 @@ main {
 
 #previsao {
   margin-top: 1rem;
+  background-color: azure;
 }
 
 .dia {
   padding: 0.625rem;
   border: 1px solid green;
 }
-

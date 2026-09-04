@@ -1,43 +1,46 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    background-color: rgb(120, 223, 185);
+  font-family: Roboto, sans-serif;
+  background-color: rgb(120, 223, 185);
 }
 
 main {
-    max-width: 38rem;
-    margin: 2.5rem auto;
-    padding: 1.25rem;
-    background-color: blanchedalmond;
-    border: 1px snow;
+  max-width: 38rem;
+  margin: 2.5rem auto;
+  padding: 1.25rem;
+  background-color: blanchedalmond;
+  border: 1px snow;
 }
 
 #cidade {
-    width: 100%;
-    padding: 0.625rem;
-    font-size: 1rem;
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 1rem;
 }
 
 .cidade {
-    width: 100%;
-    padding: 0.625rem;
-    cursor: pointer;
-    background-color: yellow;
-    border: 1px solid blue;
+  width: 100%;
+  padding: 0.625rem;
+  cursor: pointer;
+  background-color: yellow;
+  border: 1px solid blue;
 }
 
 .cidade:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
-.dia{
-    padding: 0.625rem;
-    border: 1px solid green
+#previsao {
+  margin-top: 1rem;
 }
+
+.dia {
+  padding: 0.625rem;
+  border: 1px solid green;
+}
+

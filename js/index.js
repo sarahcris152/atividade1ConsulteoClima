@@ -1,3 +1,4 @@
+
 let campoCidade = document.querySelector("#cidade");
 let elementoMensagem = document.querySelector("#mensagem");
 let elementoCidades = document.querySelector("#cidades");
@@ -15,10 +16,12 @@ async function buscarCidades() {
   elementoMensagem.textContent = "Buscando...";
 
   let resposta = await fetch(
-    `https://brasilapi.com.br/api/cptec/v1/cidade/${nome}`
+    `https://brasilapi.com.br/api/cptec/v1/cidade/${nome}`,
   );
 
   let dados = await resposta.json();
+
+  elementoCidades.textContent = "";
 
   if (resposta.ok) {
     for (let i = 0; i < dados.length; i++) {
@@ -37,15 +40,16 @@ async function buscarCidades() {
 }
 
 async function buscarPrevisao(id) {
-  elementoPrevisao.textContent = "Buscando...";
-  let resposta = await fetch(
-    `https://brasilapi.com.br/api/cptec/v1/clima/previsao/${id}`
+    elementoMensagem.textContent = `Buscando previsão. . .`;
+
+let resposta = await fetch(
+    `https://brasilapi.com.br/api/cptec/v1/clima/previsao/${id}`,
   );
 
   let dados = await resposta.json();
 
   if (resposta.ok) {
-    elementoPrevisao.innerHTML = `
+    elementoMensagem.innerHTML = `
          <h2>${dados.cidade}  -  ${dados.estado}</h2>
          <div class="dia">
          <p>Data: ${dados.clima[0].data}</p>
@@ -66,4 +70,3 @@ function formatarData(data) {
   let partes = data.split("-");
   return `${partes[2]}/${partes[1]}/${partes[0]}`;
 }
-

@@ -18,21 +18,22 @@
             <h1 class="titulo">Como está o clima?</h1>
           </div>
         </header>
+
+
         <div class="busca">
-            <label for="cidade">Busque uma cidade brasileira</label>
-            <div class="campo-busca"></div>
-            <span>🔎︎</span>
-
+          <label for="cidade">Busque uma cidade brasileira</label>
+          <div class="campo-busca">
+          <span>🔎︎</span>
+          <input id="cidade" type="text" placeholder="Ex.: Jacareí" autocomplete="off"/>
         </div>
+        <small>Digite uma cidade e pressione Enter</small>
+    </div>
+
+    <p id="mensagem"></p>
+    <div id="cidades"></div>
+    <div id="previsao"></div>
+
       </section>
-      <h1>Consulte o clima</h1>
-      <p>Digite uma cidade e pressione Enter:</p>
-
-      <input id="cidade" type="text" placeholder="Ex: São Paulo" />
-
-      <p id="mensagem"></p>
-      <div id="cidades"></div>
-      <div id="previsao"></div>
     </main>
   </body>
 </html>
